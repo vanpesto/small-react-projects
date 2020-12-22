@@ -1,0 +1,42 @@
+.section-lorem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.lorem-title {
+  text-transform: uppercase;
+  color: var(--clr-primary-1);
+}
+.lorem-form {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  font-size: 1.25rem;
+  color: var(--clr-primary-1);
+}
+.section-lorem input {
+  padding: 0.25rem 0.5rem;
+  width: 4rem;
+  border-radius: var(--radius);
+  border: none;
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+}
+button {
+  background: var(--clr-primary-10);
+}
+.result {
+  margin-bottom: 2rem;
+}
+.lorem-text {
+  max-width: 1000px;
+  padding-bottom: 5rem;
+}
