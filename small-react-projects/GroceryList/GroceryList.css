@@ -1,0 +1,139 @@
+.grocery {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  padding: 4rem;
+}
+.grocery-add-item {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+}
+.grocery-add-item:focus {
+  border-color: green;
+}
+
+.grocery-item-write {
+  border-bottom: 2px solid green !important;
+
+  outline: none;
+}
+.grocery-items {
+  width: 70%;
+}
+.grocery-item textarea {
+  border: none;
+  outline: none;
+  height: 25px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+}
+.grocery-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+}
+
+.grocery-add-container {
+  margin: 2em 0;
+}
+.grocery-btn {
+  border: none;
+  background-color: green;
+  padding: 0.8rem 2rem;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: white;
+}
+.grocery-clear-all-btn {
+  font-size: 1.2rem;
+  background-color: rgb(255, 112, 112);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+}
+.grocery-title {
+  font-size: 2.5rem;
+}
+.grocery-item-btn-container {
+  display: flex;
+}
+.grocery-item-btn-container button {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  outline: none;
+}
+.grocery-btn-edit {
+  color: green;
+  margin-right: 0.2rem;
+}
+.grocery-btn-delete {
+  color: red;
+}
+.grocery-btn-edit span {
+  pointer-events: none;
+}
+.alert {
+  width: 50%;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.alert-danger {
+  background-color: rgb(255, 112, 112);
+}
+.alert-success {
+  background-color: rgb(103, 194, 103);
+}
+@media only screen and (max-width: 1100px) {
+  .grocery-add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .grocery-btn {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .grocery-items {
+    width: 100%;
+  }
+  .grocery {
+    padding: 3rem 1.5rem;
+  }
+  .grocery-add-container input {
+    width: 90%;
+  }
+  .grocery-title {
+    font-size: 2rem;
+    white-space: pre;
+  }
+  .grocery-item {
+    flex-direction: column;
+  }
+  .grocery-item textarea {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
