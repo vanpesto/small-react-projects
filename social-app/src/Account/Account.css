@@ -1,0 +1,198 @@
+.account {
+  padding: 3rem 0.5rem;
+}
+.account h3 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.account-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 4px 2px black;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  max-width: 1000px;
+  color: white;
+}
+.account-auth-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  box-shadow: 0 0 4px 2px black;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  max-width: 600px;
+  color: white;
+}
+.account-form {
+  width: 85%;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.input-container label {
+  font-size: 1rem;
+  padding-bottom: 0.2rem;
+  font-weight: 600;
+}
+.input-container input {
+  font-size: 1.3rem;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 0.2rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid gray;
+  width: 100%;
+}
+.form-btn {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  padding: 0.7rem;
+  background: rgb(67, 136, 238);
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.acc-link {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forgot-password {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  display: block;
+  text-align: center;
+}
+.profile-email {
+  font-size: 1.2rem;
+}
+.profile-update-btn {
+  display: inline-block;
+  background-color: rgb(67, 136, 238);
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  padding: 0.7rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.logout-btn {
+  display: block;
+  margin: 1rem auto 0 auto;
+  border: none;
+  text-decoration: underline;
+  color: var(--red);
+  font-size: 1.2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+.form-error {
+  background-color: rgb(255, 163, 163);
+  color: rgb(114, 0, 0);
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.account-message {
+  background-color: rgb(171, 255, 163);
+  color: rgb(0, 136, 0);
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.user-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -100px auto 0 auto;
+  border-radius: 50%;
+  z-index: 200;
+  cursor: pointer;
+}
+.user-image span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+}
+.user-image:after {
+  content: "";
+  position: absolute;
+  left: -2.5%;
+  top: -2.5%;
+  border-radius: 50%;
+  z-index: -2;
+  width: 105%;
+  height: 105%;
+  background-color: var(--red);
+}
+.user-image img {
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-bg-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.user-bg-img img {
+  height: 400px;
+  object-fit: cover;
+}
+.user-change-bg-btn {
+  position: absolute;
+  display: flex;
+
+  right: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  outline: none;
+  bottom: 2rem;
+  border: 1px solid white;
+  padding: 0.6rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.user-change-bg-btn p {
+  margin-right: 0.4rem;
+  font-size: 0.9rem;
+}
+.no-bg {
+  top: 0;
+}
+.account-username {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.profile-page {
+  padding-bottom: 3rem;
+}
+.post-btn {
+  cursor: pointer;
+}
+@media only screen and (max-width: 730px) {
+  .user-change-bg-btn {
+    top: 15px;
+    right: 15px;
+    bottom: initial;
+  }
+}

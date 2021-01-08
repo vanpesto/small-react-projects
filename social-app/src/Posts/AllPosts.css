@@ -1,0 +1,105 @@
+.no-user-message {
+  font-size: 1.1rem;
+}
+.allposts {
+  padding: 0 0.6rem;
+}
+.fetch-more-posts {
+  display: block;
+  margin: 1rem auto;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 1.3rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.loading-posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.dot-falling {
+  position: relative;
+  left: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--red);
+  box-shadow: 9999px 0 0 0 var(--red);
+  animation: dotFalling 1s infinite linear;
+  animation-delay: 0.1s;
+}
+
+.dot-falling::before,
+.dot-falling::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-falling::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--red);
+  animation: dotFallingBefore 1s infinite linear;
+  animation-delay: 0s;
+}
+
+.dot-falling::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--red);
+  color: var(--red);
+  animation: dotFallingAfter 1s infinite linear;
+  animation-delay: 0.2s;
+}
+
+@keyframes dotFalling {
+  0% {
+    box-shadow: 9999px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 9999px 0 0 0 var(--red);
+  }
+  100% {
+    box-shadow: 9999px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+
+@keyframes dotFallingBefore {
+  0% {
+    box-shadow: 9984px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 9984px 0 0 0 var(--red);
+  }
+  100% {
+    box-shadow: 9984px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}
+
+@keyframes dotFallingAfter {
+  0% {
+    box-shadow: 10014px -15px 0 0 rgba(152, 128, 255, 0);
+  }
+  25%,
+  50%,
+  75% {
+    box-shadow: 10014px 0 0 0 var(--red);
+  }
+  100% {
+    box-shadow: 10014px 15px 0 0 rgba(152, 128, 255, 0);
+  }
+}

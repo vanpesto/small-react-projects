@@ -1,0 +1,32 @@
+.emoji-picker-react {
+  width: 90% !important;
+}
+.write-comment-container {
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-background);
+  border: 1px solid transparent;
+}
+.emoji-picker {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+.write-comment {
+  width: 96%;
+  padding: 0.5rem 1rem;
+  resize: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  background-color: var(--dark-background);
+  border: 1px solid transparent;
+  color: white;
+  outline: none;
+}
+.write-comment-container:focus-within {
+  border: 1px solid var(--red);
+}
