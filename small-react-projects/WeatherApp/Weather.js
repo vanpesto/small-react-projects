@@ -13,16 +13,12 @@ function App() {
   const [error,setError] = useState("")
 
   useEffect(() => {
-    try{
+ 
     fetch(`${api.base}weather?q=Bulgaria&units=metric&APPID=${api.key}`)
     .then(res => res.json())
     .then(result => {
-      setWeatherData(result)
-      
+      setWeatherData(result) 
     })
-    }catch(error){
-      console.log(error.message)
-    }
   }, [])
   useEffect(() => {
     if(weatherData.weather){
@@ -57,7 +53,6 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
   const getBackground = (weatherData) =>{
-    console.log(weatherData)
     if(weatherData.main.temp>16){
       setBackground("app-warm")
     }else{
